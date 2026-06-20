@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection';
 import FeatureSection from './components/FeatureSection';
 import WorkflowSection from './components/WorkflowSection';
 import Footer from './components/Footer';
+import logoUrl from './assets/logo.png';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<'home' | 'signin'>('home');
@@ -123,11 +124,8 @@ export default function App() {
                   <span>BACK</span>
                 </button>
 
-                <div className="flex items-center space-x-2 select-none">
-                  <div className="w-6 h-6 rounded bg-[#1A1A17] flex items-center justify-center text-white">
-                    <Sparkles className="w-3 h-3 text-[#FF6B35]" />
-                  </div>
-                  <span className="font-display font-black text-xs tracking-tight text-[#1A1A17]">GradeSync</span>
+                <div className="flex items-center select-none">
+                  <img src={logoUrl} alt="Entrix" className="h-8 w-auto object-contain mix-blend-multiply rounded-lg" />
                 </div>
               </div>
 
