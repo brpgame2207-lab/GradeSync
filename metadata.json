@@ -1,0 +1,6 @@
+{
+  "name": "ERP Marks Entry Automation",
+  "description": "An elegant, premium landing page for an ERP Marks Entry Automation platform with floating interactive showcases, OCR extraction previews, and streamlined academic workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

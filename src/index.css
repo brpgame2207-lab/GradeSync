@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-brand: #FF6B35;
+  --color-brand-soft: #FFF3EE;
+}
+
+/* Custom styles for the ChronoTask style landing page */
+@layer base {
+  body {
+    background-color: #F7F7F5;
+    color: #1A1A17;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom fade in and floating animations used in ChronoTask reference */
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(var(--rot, 0deg));
+  }
+  50% {
+    transform: translateY(-8px) rotate(calc(var(--rot, 0deg) + 0.5deg));
+  }
+}
+
+.animate-float-gentle {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+@keyframes float-opposite {
+  0%, 100% {
+    transform: translateY(0px) rotate(var(--rot, 0deg));
+  }
+  50% {
+    transform: translateY(8px) rotate(calc(var(--rot, 0deg) - 0.5deg));
+  }
+}
+
+.animate-float-opposite {
+  animation: float-opposite 7s ease-in-out infinite;
+}
+
+@keyframes glass-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(0.5deg);
+  }
+}
+
+.animate-glass-float {
+  animation: glass-float 5s ease-in-out infinite;
+}
+
+/* Scroll shadow effect */
+.scroller::-webkit-scrollbar {
+  height: 4px;
+}
+.scroller::-webkit-scrollbar-thumb {
+  background: #E5E5E0;
+  border-radius: 2px;
+}
