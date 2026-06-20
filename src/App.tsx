@@ -124,8 +124,9 @@ export default function App() {
                   <span>BACK</span>
                 </button>
 
-                <div className="flex items-center select-none">
+                <div className="flex items-center select-none space-x-2">
                   <img src={logoUrl} alt="Entrix" className="h-8 w-auto object-contain mix-blend-multiply rounded-lg" />
+                  <span className="text-sm tracking-tight text-[#1A1A17] uppercase" style={{ fontFamily: '"Black Ops One", system-ui' }}>ENTRIX</span>
                 </div>
               </div>
 
