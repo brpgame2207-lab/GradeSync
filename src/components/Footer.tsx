@@ -9,9 +9,9 @@ export default function Footer() {
         {/* Left Column side info */}
         <div className="space-y-4 max-w-xl">
           <div className="flex items-center group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img src={logoUrl} alt="Entrix" className="h-12 w-auto object-contain mix-blend-multiply rounded-xl" style="font-family: 'Black Ops One';" />
+            <img src={logoUrl} alt="Entrix" className="h-12 w-auto object-contain mix-blend-multiply rounded-xl" />
           </div>
-          <div><span className="text-lg font-display text-[#1A1A17] font-semibold tracking-tighter uppercase">
+          <div><span className="text-lg text-[#1A1A17] tracking-tighter uppercase" style={{ fontFamily: '"Black Ops One", system-ui' }}>
             ENTRIX
           </span></div>
           <p className="text-xs text-[#5C5C54] font-light leading-relaxed">
